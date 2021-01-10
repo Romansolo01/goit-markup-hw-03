@@ -36,7 +36,23 @@ body {
   background-color: var(--primary-background-color);
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.container-menu {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .menu-list {
+  margin-left: 93px;
+
   display: flex;
   padding-right: 0;
   padding-left: 0;
@@ -71,11 +87,12 @@ body {
 }
 
 .address-list {
+  margin-left: auto;
   list-style: none;
   display: flex;
 }
 
-.address-list:not(:last-child) {
+.address-link:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -100,7 +117,7 @@ body {
 /* TOP */
 
 .container-top {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -108,12 +125,14 @@ body {
 }
 
 .top {
-  padding-bottom: 94px;
   text-align: center;
   background-color: var(--background-top-footer);
 }
 
 .top-title {
+  padding-top: 200px;
+  padding-left: 236px;
+  padding-right: 236px;
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -124,6 +143,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.order-button {
+  padding-bottom: 200px;
 }
 
 .order,
@@ -153,7 +176,7 @@ body {
 }
 
 .container-feature {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -175,7 +198,13 @@ body {
 .feature-list {
   padding-right: 0;
   padding-left: 0;
+
   list-style: none;
+  display: flex;
+}
+
+.feature-list-item {
+  max-width: 270px;
 }
 
 .feature-text {
@@ -189,19 +218,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+.feature-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* О нас */
 
 /* Наши спецификации */
 
 .orientation {
   padding-bottom: 94px;
-
-  background-color: var(--primary-background-color);
   text-align: center;
+  background-color: var(--primary-background-color);
 }
 
 .container-orientation {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -211,7 +243,6 @@ body {
 .orientation-title {
   margin-top: 0;
   margin-bottom: 50px;
-
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 36px;
@@ -225,7 +256,13 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  max-height: 294px;
   list-style: none;
+  display: flex;
+}
+
+.orientation-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Наши спецификации */
@@ -316,7 +353,6 @@ body {
 
 .footer-list {
   margin-top: 0;
-  margin-bottom: 0;
   padding-left: 0;
   padding-bottom: 60px;
   list-style: none;
@@ -389,7 +425,7 @@ body {
 }
 
 .container-portfolio {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -398,20 +434,37 @@ body {
   margin-bottom: 94px;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-images {
   margin-bottom: 20px;
 }
 
 .portfolio-list {
+  padding-left: 0;
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-elements {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.flex-elements:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .portfolio-title {
   color: var(--primary-text-color);
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0;
 
   font-weight: bold;
   font-size: 18px;
@@ -421,7 +474,8 @@ body {
 
 .portfolio-text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 
   color: var(--secondary-text-color);
   font-weight: normal;

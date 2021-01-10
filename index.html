@@ -21,28 +21,32 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <nav class="menu">
-        <a href="#" aria-label="логотип">
-          <img src="./images/logo.svg" alt="web-studio Логотип" />
-        </a>
-        <ul class="menu-list">
-          <li class="menu-list-item">
-            <a class="menu-link" href="./index.html">Студия</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="address-list">
-        <a class="address-link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+      <div class="container-menu">
+        <nav class="menu">
+          <a href="#" aria-label="логотип">
+            <img src="./images/logo.svg" alt="web-studio Логотип" />
+          </a>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a class="menu-link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <address class="address-list">
+            <a class="address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="address-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </nav>
+      </div>
     </header>
     <!-- /Шапка сайта -->
     <main>
@@ -50,7 +54,9 @@
       <section class="top">
         <div class="container-top">
           <h1 class="top-title">Эффективные решения для вашего бизнеса</h1>
-          <a class="order" href="#">Заказать услугу</a>
+          <div class="order-button">
+            <a class="order" href="#">Заказать услугу</a>
+          </div>
         </div>
       </section>
       <!-- /TOP -->
@@ -58,28 +64,28 @@
       <section class="feature">
         <div class="container-feature">
           <ul class="feature-list">
-            <li>
+            <li class="feature-list-item">
               <h3 class="feature-title">Внимание к деталям</h3>
               <p class="feature-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="feature-list-item">
               <h3 class="feature-title">Пунктуальность</h3>
               <p class="feature-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="feature-list-item">
               <h3 class="feature-title">Планирование</h3>
               <p class="feature-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="feature-list-item">
               <h3 class="feature-title">Современные технологии</h3>
               <p class="feature-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -95,7 +101,7 @@
         <div class="container-orientation">
           <h2 class="orientation-title">Чем мы занимаемся</h2>
           <ul class="orientation-list">
-            <li>
+            <li class="orientation-list-item">
               <img
                 src="./images/specific1.jpg"
                 width="370"
@@ -103,7 +109,7 @@
                 alt="Верстка сайтов"
               />
             </li>
-            <li>
+            <li class="orientation-list-item">
               <img
                 src="./images/specific2.jpg"
                 width="370"
@@ -111,7 +117,7 @@
                 alt="Мобильные приложения"
               />
             </li>
-            <li>
+            <li class="orientation-list-item">
               <img
                 src="./images/specific3.jpg"
                 width="370"
