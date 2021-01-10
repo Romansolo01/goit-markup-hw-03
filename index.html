@@ -26,9 +26,15 @@
           <img src="./images/logo.svg" alt="web-studio Логотип" />
         </a>
         <ul class="menu-list">
-          <li><a class="menu-link" href="./index.html">Студия</a></li>
-          <li><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="menu-link" href="#">Контакты</a></li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="./index.html">Студия</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
       <address class="address-list">
@@ -41,86 +47,90 @@
     <!-- /Шапка сайта -->
     <main>
       <!-- TOP -->
-        <section class="top">
-          <div class="container-top">
+      <section class="top">
+        <div class="container-top">
           <h1 class="top-title">Эффективные решения для вашего бизнеса</h1>
           <a class="order" href="#">Заказать услугу</a>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- /TOP -->
       <!-- О нас -->
       <section class="feature">
-        <ul class="feature-list">
-          <li>
-            <h3 class="feature-title">Внимание к деталям</h3>
-            <p class="feature-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="feature-title">Пунктуальность</h3>
-            <p class="feature-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="feature-title">Планирование</h3>
-            <p class="feature-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="feature-title">Современные технологии</h3>
-            <p class="feature-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container-feature">
+          <ul class="feature-list">
+            <li>
+              <h3 class="feature-title">Внимание к деталям</h3>
+              <p class="feature-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3 class="feature-title">Пунктуальность</h3>
+              <p class="feature-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3 class="feature-title">Планирование</h3>
+              <p class="feature-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3 class="feature-title">Современные технологии</h3>
+              <p class="feature-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- /О нас -->
       <!-- Наши спецификации -->
       <section class="orientation">
-        <h2 class="orientation-title">Чем мы занимаемся</h2>
-        <ul class="orientation-list">
-          <li>
-            <img
-              src="./images/specific1.jpg"
-              width="370"
-              height="294"
-              alt="Верстка сайтов"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/specific2.jpg"
-              width="370"
-              height="294"
-              alt="Мобильные приложения"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/specific3.jpg"
-              width="370"
-              height="294"
-              alt="Дизайн"
-            />
-          </li>
-        </ul>
+        <div class="container-orientation">
+          <h2 class="orientation-title">Чем мы занимаемся</h2>
+          <ul class="orientation-list">
+            <li>
+              <img
+                src="./images/specific1.jpg"
+                width="370"
+                height="294"
+                alt="Верстка сайтов"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/specific2.jpg"
+                width="370"
+                height="294"
+                alt="Мобильные приложения"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/specific3.jpg"
+                width="370"
+                height="294"
+                alt="Дизайн"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Наши спецификаци -->
       <!-- Наша команда -->
-      <div class="container-team">
-        <section class="team">
+      <section class="team">
+        <div class="container-team">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li>
               <img
+                class="team-images"
                 src="./images/igor.jpg"
                 width="270"
                 height="260"
@@ -131,6 +141,7 @@
             </li>
             <li>
               <img
+                class="team-images"
                 src="./images/olga.jpg"
                 width="270"
                 height="260"
@@ -141,6 +152,7 @@
             </li>
             <li>
               <img
+                class="team-images"
                 src="./images/nikolay.jpg"
                 width="270"
                 height="260"
@@ -151,6 +163,7 @@
             </li>
             <li>
               <img
+                class="team-images"
                 src="./images/mikhail.jpg"
                 width="270"
                 height="260"
@@ -160,13 +173,13 @@
               <p class="person-text">UI Designer</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- /Наша команда -->
     </main>
     <footer class="footer">
       <!-- Контакты -->
-      <img src="./images/logo-footer.svg" alt="Логотип" />
+      <img class="footer-logo" src="./images/logo-footer.svg" alt="Логотип" />
       <ul class="footer-list">
         <li>
           <address>

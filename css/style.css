@@ -37,17 +37,31 @@ body {
 }
 
 .menu-list {
+  display: flex;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
   list-style: none;
+}
+
+.menu-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu-link,
 .menu-link:visited {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primary-text-color);
 }
 
 .menu-link:hover,
@@ -58,16 +72,21 @@ body {
 
 .address-list {
   list-style: none;
+  display: flex;
+}
+
+.address-list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .address-link {
+  color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--secondary-text-color);
 }
 
 .address-link:hover,
@@ -89,6 +108,7 @@ body {
 }
 
 .top {
+  padding-bottom: 94px;
   text-align: center;
   background-color: var(--background-top-footer);
 }
@@ -96,13 +116,14 @@ body {
 .top-title {
   margin-top: 0;
   margin-bottom: 30px;
+
+  color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text-color);
 }
 
 .order,
@@ -111,55 +132,99 @@ body {
   text-align: center;
   min-width: 200px;
   height: 50px;
+
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
   text-decoration: none;
   border-radius: 4px;
   padding: 10px 32px;
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
 }
 
 /* TOP */
 
 /* О нас */
 
+.feature {
+  padding-bottom: 94px;
+  background-color: var(--primary-background-color);
+}
+
+.container-feature {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .feature-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--primary-text-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 
 .feature-list {
+  padding-right: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 .feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--secondary-text-color);
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 /* О нас */
 
 /* Наши спецификации */
 
+.orientation {
+  padding-bottom: 94px;
+
+  background-color: var(--primary-background-color);
+  text-align: center;
+}
+
+.container-orientation {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .orientation-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--primary-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .orientation-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 
@@ -167,35 +232,73 @@ body {
 
 /* Наша комманда */
 
+.container-team {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team {
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+
+.team-images {
+  margin-bottom: 30px;
+}
+
 .team-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 101px;
+  padding-bottom: 50px;
+
+  color: var(--primary-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .team-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 
 .person-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .person-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--secondary-text-color);
   font-weight: normal;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+}
+
+.person-text:last-child {
+  margin-bottom: 0;
 }
 
 /* Наша комманда */
@@ -206,30 +309,39 @@ body {
   background-color: var(--background-top-footer);
 }
 
+.footer-logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
 .footer-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 60px;
   list-style: none;
 }
 
 .address-location,
 .address-location:visited {
+  color: var(--white-text-color);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--white-text-color);
 }
 
 .address-contacts,
 .address-contacts:visited {
+  color: var(--footer-address-text-color);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--footer-address-text-color);
 }
 
 /* Контакты */
@@ -243,20 +355,23 @@ body {
 
 .filter-button,
 .filter-button:visited {
+  padding: 6px 22px;
   border-radius: 4px;
   border: 0 solid transparent;
-  padding: 6px 22px;
+
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .filter-button:hover,
 .filter-button:active,
 .filter-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
   outline: none;
   border: 0 solid transparent;
   font-weight: 500;
@@ -264,30 +379,55 @@ body {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
 }
 
 /* Portfolio */
 
+.portfolio {
+  background-color: var(--primary-background-color);
+  text-align: center;
+}
+
+.container-portfolio {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.portfolio-images {
+  margin-bottom: 20px;
+}
+
 .portfolio-list {
   list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .portfolio-title {
+  color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
 }
 
 .portfolio-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
   font-weight: normal;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 /* Portfolio */
