@@ -318,8 +318,8 @@ body {
 
 .team-item {
   background-color: var(--primary-background-color);
-  box-shadow: var(--shadow)
   border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--shadow)
 }
 
 .team-item:not(:last-child) {
