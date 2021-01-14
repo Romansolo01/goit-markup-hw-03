@@ -475,12 +475,6 @@ body {
   margin-bottom: 20px;
 }
 
-.portfolio-list {
-  padding-left: 0;
-  list-style: none;
-  margin-bottom: 0;
-  margin-top: 0;
-}
 
 .container-portfolio {
   width: 1200px;
@@ -492,7 +486,11 @@ body {
   margin-bottom: 94px;
 }
 
-.flex-container {
+.portfolio-list {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
 }
