@@ -90,6 +90,32 @@ body {
   color: var(--accent-color);
 }
 
+.menu-link-studio {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.menu-link-portfolio {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 .address-list {
   margin-left: auto;
   list-style: none;
