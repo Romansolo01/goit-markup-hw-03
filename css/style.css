@@ -534,6 +534,10 @@ body {
   margin-bottom: 0;
 }
 
+.portfolio-img {
+  max-width: 100%;
+}
+
 .portfolio-title {
   color: var(--primary-text-color);
   margin-top: 0;
