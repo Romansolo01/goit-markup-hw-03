@@ -536,6 +536,7 @@ body {
 .portfolio-img {
   max-width: 100%;
   border: none;
+  vertical-align: bottom;
 }
 
 .portfolio-title {
